@@ -7,7 +7,7 @@ import (
 
 func main() {
 	conf := viper.New()
-	conf.SetConfigFile("testjson.conf")
+	conf.SetConfigFile("folder/testjson.conf")
 	conf.SetConfigType("json")
 	if err := conf.ReadInConfig(); err != nil {
 		panic(fmt.Errorf("fatal error config file: %w", err))
