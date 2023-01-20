@@ -28,4 +28,6 @@ func main() {
 			fmt.Println(k, v)
 		}
 	}
+	fmt.Println(dst[2]["obj"].(map[string]interface{}))
+	fmt.Println(dst[2]["obj"].(map[string]interface{})["aaa"].(float64))
 }
